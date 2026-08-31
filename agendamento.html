@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Naildesign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./images/logo.jpg" alt="Logo Naildesign" class="logo">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="quemsomos.html">Quem somos</a>
+            <a href="comocuidar.html">Como cuidar?</a>
+            <a href="agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Agende seu Horário</h2>
+        <p>Preencha os dados abaixo para solicitar seu atendimento.</p>
+
+        <!-- Formulário Básico -->
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="telefone">WhatsApp / Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+
+            <label for="servico">Serviço Desejado:</label>
+            <select id="servico" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="alongamento">Alongamento em Gel</option>
+                <option value="manutencao">Manutenção de Gel</option>
+                <option value="esmaltacao">Esmaltação em Gel</option>
+                <option value="blindagem">Blindagem de Unhas</option>
+                <option value="manicure">Manicure Simples</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+
+            <button type="submit">Confirmar Agendamento</button>
+        </form>
+    </main>
+
+</body>
+</html>
