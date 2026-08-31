@@ -1,7 +1,39 @@
-header{
-    background-color: #E3BC9A;
-    padding: 30px 60px;
-    justify-content: space-between; 
-    
+/* Limpa as margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+/* Cabeçalho com Flexbox */
+header {
+    background-color: #E3BC9A;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between; /* Logo na esquerda, links na direita */
+    align-items: center;            /* Alinha os dois na vertical */
+}
+
+/* Tamanho da logo */
+.logo {
+    height: 50px;
+}
+
+/* Links do menu */
+header nav a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 20px; /* Espaço entre os links */
+    font-size: 16px;
+}
+
+/* Conteúdo principal da página */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 10px;
 }
