@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como Cuidar? - Naildesign</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Cuidar | Naildesign</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <img src="./images/logo.jpg" alt="Logo Naildesign" class="logo">
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="quemsomos.html">Quem somos</a>
-            <a href="comocuidar.html">Como cuidar?</a>
-            <a href="agendamento.html">Agendamento</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+      <a href="comocuidar.html" class="nav-link">Como Cuidar</a>
+      <a href="agendamento.html" class="nav-link btn-nav">Agendar Horário</a>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Como Cuidar das Suas Unhas</h2>
-        <p>Dicas essenciais para manter seu alongamento e esmaltação bonitos por muito mais tempo.</p>
+  <main class="container">
+    <div class="section-header">
+      <h2>Guia de Cuidados Diários</h2>
+      <p>Dicas simples para prolongar a vida útil do seu alongamento e manter as unhas saudáveis.</p>
+    </div>
 
-        <!-- Container com os Cards de Cuidados (Flexbox) -->
-        <section class="container-cuidados">
-            <div class="card-cuidado">
-                <h3>1. Evite Usar as Unhas como Ferramentas</h3>
-                <p>Não use as unhas para abrir latas, raspar etiquetas ou apertar botões com força. Use as pontas dos dedos.</p>
-            </div>
+    <div class="tips-grid">
+      <article class="tip-card">
+        <h3>1. Unhas não são ferramentas</h3>
+        <p>Evite usar as unhas para abrir latinhas, raspar adesivos ou pressionar botões firmes. Use as pontas dos dedos para evitar pontos de tensão mecânica.</p>
+      </article>
 
-            <div class="card-cuidado">
-                <h3>2. Hidrate as Cutículas Diariamente</h3>
-                <p>Use óleo ou creme específico para cutículas todos os dias para evitar o ressecamento e rachaduras.</p>
-            </div>
+      <article class="tip-card">
+        <h3>2. Óleo de cutícula diário</h3>
+        <p>A hidratação com óleo de cutícula impede que a lâmina natural resseque por baixo do gel, prevenindo descolamentos precoces.</p>
+      </article>
 
-            <div class="card-cuidado">
-                <h3>3. Use Luvas em Tarefas Domésticas</h3>
-                <p>Produtos de limpeza fortes e detergentes enfraquecem o gel e ressecam a pele. Proteja sempre suas mãos.</p>
-            </div>
+      <article class="tip-card">
+        <h3>3. Luvas em produtos químicos</h3>
+        <p>Detergentes fortes, cloro e acetona reagem com as resinas dos géis. Ao manusear produtos de limpeza, use sempre luvas de borracha.</p>
+      </article>
 
-            <div class="card-cuidado">
-                <h3>4. Respeite o Tempo de Manutenção</h3>
-                <p>Faça a manutenção a cada 15 a 20 dias para evitar infiltrações e garantir a saúde da sua unha natural.</p>
-            </div>
-        </section>
-    </main>
+      <article class="tip-card">
+        <h3>4. Cronograma de manutenção</h3>
+        <p>O ponto de tensão da unha se desloca conforme ela cresce. Realizar a manutenção rigorosamente a cada 15 a 21 dias evita quebras e infiltrações.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>

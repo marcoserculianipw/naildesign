@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos - Naildesign</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quem Somos | Naildesign</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <img src="./images/logo.jpg" alt="Logo Naildesign" class="logo">
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="quemsomos.html">Quem somos</a>
-            <a href="comocuidar.html">Como cuidar?</a>
-            <a href="agendamento.html">Agendamento</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+      <a href="comocuidar.html" class="nav-link">Como Cuidar</a>
+      <a href="agendamento.html" class="nav-link btn-nav">Agendar Horário</a>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Quem Somos</h2>
-        <p>Conheça um pouco da nossa história e da equipe por trás do seu cuidado.</p>
+  <main class="container">
+    <div class="section-header">
+      <h2>Sobre o Nosso Estúdio</h2>
+      <p>Conheça quem cuida do seu estilo com técnica, biossegurança e afeto.</p>
+    </div>
 
-        <!-- Seção da Equipe com Flexbox -->
-        <section class="sessao-equipe">
-            <div class="equipe-card">
-                <img src="./images/equipe.jpg" alt="Nossa Equipe" class="equipe-foto">
-                <div class="equipe-texto">
-                    <h3>Nossa Missão</h3>
-                    <p>Somos apaixonadas por elevar a autoestima das nossas clientes através da arte e do cuidado com as unhas. Trabalhamos com produtos de alta qualidade e técnicas modernas para garantir beleza e saúde para suas unhas.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="team-wrapper">
+      <img src="./images/equipe.jpg" alt="Profissionais da equipe Naildesign">
+      <div class="team-details">
+        <h3>Paixão pelo detalhe e excelência técnica</h3>
+        <p>Fundado com o objetivo de redefinir o conceito de manicure tradicional, nosso estúdio é um espaço projetado para seu bem-estar. Não aplicamos apenas produtos: estudamos a estrutura biológica de cada unha para garantir procedimentos seguros, duradouros e sem danos.</p>
+        <p>Nossa equipe participa constantemente de capacitações internacionais para trazer os melhores formatos, tendências e técnicas de biocompatibilidade do mercado.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>

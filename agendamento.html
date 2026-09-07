@@ -1,54 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento - Naildesign</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento | Naildesign</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <img src="./images/logo.jpg" alt="Logo Naildesign" class="logo">
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="quemsomos.html">Quem somos</a>
-            <a href="comocuidar.html">Como cuidar?</a>
-            <a href="agendamento.html">Agendamento</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+      <a href="comocuidar.html" class="nav-link">Como Cuidar</a>
+      <a href="agendamento.html" class="nav-link btn-nav">Agendar Horário</a>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Agende seu Horário</h2>
-        <p>Preencha os dados abaixo para solicitar seu atendimento.</p>
+  <main class="container">
+    <div class="section-header">
+      <h2>Reserve seu Horário</h2>
+      <p>Preencha os dados e entraremos em contato para confirmar a disponibilidade.</p>
+    </div>
 
-        <!-- Formulário Básico -->
-        <form>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome" required>
+    <section class="booking-container">
+      <form id="formAgendamento">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex: Carolina Almeida" required>
+        </div>
 
-            <label for="telefone">WhatsApp / Telefone:</label>
-            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+        <div class="form-group">
+          <label for="telefone">WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" required>
+        </div>
 
-            <label for="servico">Serviço Desejado:</label>
-            <select id="servico" required>
-                <option value="" disabled selected>Selecione um serviço</option>
-                <option value="alongamento">Alongamento em Gel</option>
-                <option value="manutencao">Manutenção de Gel</option>
-                <option value="esmaltacao">Esmaltação em Gel</option>
-                <option value="blindagem">Blindagem de Unhas</option>
-                <option value="manicure">Manicure Simples</option>
-            </select>
+        <div class="form-group">
+          <label for="servico">Procedimento</label>
+          <select id="servico" name="servico" required>
+            <option value="" disabled selected>Escolha um serviço</option>
+            <option value="Alongamento em Gel">Alongamento em Gel (Aplicação Inicial)</option>
+            <option value="Manutenção em Gel">Manutenção em Gel</option>
+            <option value="Blindagem">Blindagem de Unhas Naturais</option>
+            <option value="Esmaltação em Gel">Esmaltação em Gel</option>
+            <option value="Remoção Segura">Remoção Profissional de Alongamento</option>
+          </select>
+        </div>
 
-            <label for="data">Data:</label>
-            <input type="date" id="data" required>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="data">Data Desejada</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          <div class="form-group">
+            <label for="horario">Horário Preferido</label>
+            <input type="time" id="horario" name="horario" required>
+          </div>
+        </div>
 
-            <label for="horario">Horário:</label>
-            <input type="time" id="horario" required>
+        <div class="form-group">
+          <label for="observacoes">Observações (Opcional)</label>
+          <textarea id="observacoes" name="observacoes" rows="3" placeholder="Possui alergias ou unhas roídas? Tem algum alongamento anterior para remoção?"></textarea>
+        </div>
 
-            <button type="submit">Confirmar Agendamento</button>
-        </form>
-    </main>
+        <button type="submit" class="btn-primary">Enviar Solicitação</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>

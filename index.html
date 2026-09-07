@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naildesign</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naildesign | Estúdio de Beleza e Cuidado</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <img src="./images/logo.jpg" alt="Logo Naildesign" class="logo">
-        <nav>
-            <a href="quemsomos.html">Quem somos</a>
-            <a href="comocuidar.html">Como cuidar?</a>
-            <a href="agendamento.html">Agendamento</a>
-        </nav>
-    </header>
+  <header class="header">
+    <a href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="quemsomos.html" class="nav-link">Quem Somos</a>
+      <a href="comocuidar.html" class="nav-link">Como Cuidar</a>
+      <a href="agendamento.html" class="nav-link btn-nav">Agendar Horário</a>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Bem-vinda ao Naildesign</h2>
-        <p>Especialistas em beleza, cuidado e estilo para suas unhas.</p>
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Unhas sofisticadas com saúde e durabilidade.</h1>
+        <p>Especialistas em alongamento em gel, blindagem e nail art minimalista. Cuidado personalizado para a beleza das suas mãos.</p>
+        <a href="agendamento.html" class="btn-primary" style="width: auto;">Agende sua Sessão</a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero.jpg" alt="Procedimento de unhas sendo realizado no estúdio">
+      </div>
+    </section>
 
-        <section class="sessao-galeria">
-            <h3>Unhas das Nossas Clientes</h3>
-            
-            <div class="galeria-unhas">
-                <div class="card-unha">
-                    <img src="./images/unha1.webp" alt="Unhas em Gel">
-                    <p>Alongamento em Gel</p>
-                </div>
-                
-                <div class="card-unha">
-                    <img src="./images/images.jpg" alt="Esmaltação em Gel">
-                    <p>Esmaltação em Gel</p>
-                </div>
-                
-                <div class="card-unha">
-                    <img src="./images/unha3.webp" alt="Nail Art Francesinha">
-                    <p>Nail Art Francesinha</p>
-                </div>
-                
-                <div class="card-unha">
-                    <img src="./images/imagem5.jpg" alt="Blindagem de Unhas">
-                    <p>Blindagem</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Galeria de Trabalhos Recentes -->
+    <section>
+      <div class="section-header">
+        <h2>Trabalhos Recentes</h2>
+        <p>Confira alguns dos acabamentos exclusivos realizados em nosso estúdio.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="./images/unha1.jpg" alt="Alongamento em Gel com formato Almond">
+          <div class="gallery-info">
+            <h4>Alongamento em Gel</h4>
+            <p>Formato Almond com acabamento natural</p>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <img src="./images/unha2.jpg" alt="Esmaltação em Gel Nude clássico">
+          <div class="gallery-info">
+            <h4>Esmaltação em Gel</h4>
+            <p>Brilho espelhado de alta durabilidade</p>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <img src="./images/unha3.jpg" alt="Francesinha moderna estilizada">
+          <div class="gallery-info">
+            <h4>Nail Art Francesinha</h4>
+            <p>Design moderno e traços finos</p>
+          </div>
+        </article>
+
+        <article class="gallery-card">
+          <img src="./images/unha4.jpg" alt="Blindagem em unhas naturais">
+          <div class="gallery-info">
+            <h4>Blindagem de Diamante</h4>
+            <p>Fortalecimento de unhas naturais</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
