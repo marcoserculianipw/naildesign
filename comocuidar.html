@@ -4,52 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Como Cuidar | Naildesign</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
-    <a href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
-    <nav class="nav-links">
-      <a href="index.html" class="nav-link">Início</a>
-      <a href="quemsomos.html" class="nav-link">Quem Somos</a>
-      <a href="comocuidar.html" class="nav-link">Como Cuidar</a>
-      <a href="agendamento.html" class="nav-link btn-nav">Agendar Horário</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 px-3 px-lg-5 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNaildesign" aria-controls="menuNaildesign" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNaildesign">
+          <div class="navbar-nav ms-auto gap-lg-3">
+            <a class="nav-link nav-link-custom" href="index.html">Início</a>
+            <a class="nav-link nav-link-custom" href="quemsomos.html">Quem Somos</a>
+            <a class="nav-link nav-link-custom" href="comocuidar.html">Como Cuidar</a>
+            <a class="btn btn-primary rounded-pill px-3 ms-lg-2" href="agendamento.html">Agendar Horário</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container py-5">
     <div class="section-header">
       <h2>Guia de Cuidados Diários</h2>
       <p>Dicas simples para prolongar a vida útil do seu alongamento e manter as unhas saudáveis.</p>
     </div>
 
-    <div class="tips-grid">
-      <article class="tip-card">
-        <h3>1. Unhas não são ferramentas</h3>
-        <p>Evite usar as unhas para abrir latinhas, raspar adesivos ou pressionar botões firmes. Use as pontas dos dedos para evitar pontos de tensão mecânica.</p>
+    <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <span class="me-2">✨</span>
+      A rotina de cuidado é o que preserva a saúde e a aparência das unhas no dia a dia.
+    </div>
+
+    <div class="row g-4 tips-grid">
+      <article class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 shadow-sm tip-card">
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-3">Dica 1</span>
+            <h3 class="card-title">Unhas não são ferramentas</h3>
+            <p class="card-text">Evite usar as unhas para abrir latinhas, raspar adesivos ou pressionar botões firmes. Use as pontas dos dedos para evitar pontos de tensão mecânica.</p>
+          </div>
+        </div>
       </article>
 
-      <article class="tip-card">
-        <h3>2. Óleo de cutícula diário</h3>
-        <p>A hidratação com óleo de cutícula impede que a lâmina natural resseque por baixo do gel, prevenindo descolamentos precoces.</p>
+      <article class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 shadow-sm tip-card">
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-3">Dica 2</span>
+            <h3 class="card-title">Óleo de cutícula diário</h3>
+            <p class="card-text">A hidratação com óleo de cutícula impede que a lâmina natural resseque por baixo do gel, prevenindo descolamentos precoces.</p>
+          </div>
+        </div>
       </article>
 
-      <article class="tip-card">
-        <h3>3. Luvas em produtos químicos</h3>
-        <p>Detergentes fortes, cloro e acetona reagem com as resinas dos géis. Ao manusear produtos de limpeza, use sempre luvas de borracha.</p>
+      <article class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 shadow-sm tip-card">
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-3">Dica 3</span>
+            <h3 class="card-title">Luvas em produtos químicos</h3>
+            <p class="card-text">Detergentes fortes, cloro e acetona reagem com as resinas dos géis. Ao manusear produtos de limpeza, use sempre luvas de borracha.</p>
+          </div>
+        </div>
       </article>
 
-      <article class="tip-card">
-        <h3>4. Cronograma de manutenção</h3>
-        <p>O ponto de tensão da unha se desloca conforme ela cresce. Realizar a manutenção rigorosamente a cada 15 a 21 dias evita quebras e infiltrações.</p>
+      <article class="col-md-6 col-xl-3">
+        <div class="card h-100 border-0 shadow-sm tip-card">
+          <div class="card-body">
+            <span class="badge text-bg-light border mb-3">Dica 4</span>
+            <h3 class="card-title">Cronograma de manutenção</h3>
+            <p class="card-text">O ponto de tensão da unha se desloca conforme ela cresce. Realizar a manutenção rigorosamente a cada 15 a 21 dias evita quebras e infiltrações.</p>
+          </div>
+        </div>
       </article>
     </div>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
+  <footer class="text-center text-muted py-4">
+    <p class="mb-0">&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

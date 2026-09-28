@@ -4,39 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quem Somos | Naildesign</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
-    <a href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
-    <nav class="nav-links">
-      <a href="index.html" class="nav-link">Início</a>
-      <a href="quemsomos.html" class="nav-link">Quem Somos</a>
-      <a href="comocuidar.html" class="nav-link">Como Cuidar</a>
-      <a href="agendamento.html" class="nav-link btn-nav">Agendar Horário</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 px-3 px-lg-5 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./images/logo.jpg" alt="Naildesign Studio" class="brand-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNaildesign" aria-controls="menuNaildesign" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNaildesign">
+          <div class="navbar-nav ms-auto gap-lg-3">
+            <a class="nav-link nav-link-custom" href="index.html">Início</a>
+            <a class="nav-link nav-link-custom" href="quemsomos.html">Quem Somos</a>
+            <a class="nav-link nav-link-custom" href="comocuidar.html">Como Cuidar</a>
+            <a class="btn btn-primary rounded-pill px-3 ms-lg-2" href="agendamento.html">Agendar Horário</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main class="container">
+  <main class="container py-5">
     <div class="section-header">
       <h2>Sobre o Nosso Estúdio</h2>
       <p>Conheça quem cuida do seu estilo com técnica, biossegurança e afeto.</p>
     </div>
 
-    <section class="team-wrapper">
-      <img src="./images/equipe.jpg" alt="Profissionais da equipe Naildesign">
-      <div class="team-details">
+    <section class="team-wrapper row align-items-center g-4">
+      <div class="col-lg-5">
+        <img src="./images/equipe.jpg" alt="Profissionais da equipe Naildesign" class="img-fluid rounded-4">
+      </div>
+      <div class="col-lg-7 team-details">
+        <span class="badge bg-primary-subtle text-primary-emphasis mb-3">Excelência técnica</span>
         <h3>Paixão pelo detalhe e excelência técnica</h3>
         <p>Fundado com o objetivo de redefinir o conceito de manicure tradicional, nosso estúdio é um espaço projetado para seu bem-estar. Não aplicamos apenas produtos: estudamos a estrutura biológica de cada unha para garantir procedimentos seguros, duradouros e sem danos.</p>
         <p>Nossa equipe participa constantemente de capacitações internacionais para trazer os melhores formatos, tendências e técnicas de biocompatibilidade do mercado.</p>
+        <div class="alert alert-light border mt-4 mb-0" role="alert">
+          Cuidado consciente, saúde da unha e beleza sofisticada em cada atendimento.
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
+  <footer class="text-center text-muted py-4">
+    <p class="mb-0">&copy; 2026 Naildesign Studio. Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
