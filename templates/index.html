@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Naildesign | Estúdio de Beleza e Cuidado{% endblock %}
+
+{% block content %}
+<section class="hero row align-items-center g-5 py-4">
+  <div class="col-lg-6 hero-content">
+    <span class="badge text-bg-light border mb-3">Estúdio premium em estética</span>
+    <h1>Unhas sofisticadas com saúde e durabilidade.</h1>
+    <p>Especialistas em alongamento em gel, blindagem e nail art minimalista. Cuidado personalizado para a beleza das suas mãos.</p>
+    <a href="{{ url_for('agendamento') }}" class="btn btn-primary btn-lg">Agende sua Sessão</a>
+  </div>
+  <div class="col-lg-6 hero-image">
+    <img src="{{ url_for('static', filename='images/procedimento.jpg') }}" alt="Procedimento de unhas sendo realizado no estúdio" class="img-fluid rounded-4 shadow-sm">
+  </div>
+</section>
+
+<section class="mt-5">
+  <div class="section-header">
+    <h2>Trabalhos Recentes</h2>
+    <p>Confira alguns dos acabamentos exclusivos realizados em nosso estúdio.</p>
+  </div>
+
+  <div class="row g-4">
+    <article class="col-md-6 col-xl-3">
+      <div class="card h-100 border-0 shadow-sm gallery-card">
+        <img src="{{ url_for('static', filename='images/unha1.webp') }}" class="card-img-top" alt="Alongamento em Gel com formato Almond">
+        <div class="card-body gallery-info">
+          <h4 class="card-title">Alongamento em Gel</h4>
+          <p class="card-text">Formato Almond com acabamento natural</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-6 col-xl-3">
+      <div class="card h-100 border-0 shadow-sm gallery-card">
+        <img src="{{ url_for('static', filename='images/unha2.webp') }}" class="card-img-top" alt="Esmaltação em Gel Nude clássico">
+        <div class="card-body gallery-info">
+          <h4 class="card-title">Esmaltação em Gel</h4>
+          <p class="card-text">Brilho espelhado de alta durabilidade</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-6 col-xl-3">
+      <div class="card h-100 border-0 shadow-sm gallery-card">
+        <img src="{{ url_for('static', filename='images/unha3.webp') }}" class="card-img-top" alt="Francesinha moderna estilizada">
+        <div class="card-body gallery-info">
+          <h4 class="card-title">Nail Art Francesinha</h4>
+          <p class="card-text">Design moderno e traços finos</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="col-md-6 col-xl-3">
+      <div class="card h-100 border-0 shadow-sm gallery-card">
+        <img src="{{ url_for('static', filename='images/imagem5.jpg') }}" class="card-img-top" alt="Blindagem em unhas naturais">
+        <div class="card-body gallery-info">
+          <h4 class="card-title">Blindagem de Diamante</h4>
+          <p class="card-text">Fortalecimento de unhas naturais</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+{% endblock %}
